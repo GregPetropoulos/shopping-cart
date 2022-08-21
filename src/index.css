@@ -1,0 +1,54 @@
+/** CSS RESPONSIVE DEBUGGER */
+/* * {
+  border: 1px solid blue !important;
+} */
+
+/** RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+input {
+  padding: 10px;
+  border-color: rgb(254, 78, 192);
+  border-radius: 10px;
+  background-color: rgb(210, 210, 207);
+  color: black;
+}
+button {
+  padding: 10px;
+  border-color: rgb(254, 78, 192);
+  border-radius: 10px;
+  background-color: rgb(254, 78, 192);
+  color: black;
+  width: 25%;
+  transition: all 1s ease-in-out;
+}
+button:hover {
+  transform: scale(0.8);
+  background-color: rgb(210, 210, 207);
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+/* *------------------- */
+/* *CSS DEBUGGER */
+/* *------------------- */
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+/* *------------------- */
+/* *---------------------- */
