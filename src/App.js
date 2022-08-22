@@ -3,23 +3,21 @@ import { useState } from 'react';
 import Home from './components/Home';
 import Header from './components/Header';
 import Cart from './components/Cart';
+import CartContext from './context/CartContext';
 
 function App() {
-  const [cart, setCart] = useState([]);
-
   return (
-    <Router>
-      <Header />
-      <div className='container'>
-        <Routes>
-          <Route path='/' element={<Home cart={cart} setCart={setCart} />} />
-          <Route
-            path='/cart'
-            element={<Cart cart={cart} setCart={setCart} />}
-          />
-        </Routes>
-      </div>
-    </Router>
+    <CartContext>
+      <Router>
+        <Header />
+        <div className='container'>
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/cart' element={<Cart/>} />
+          </Routes>
+        </div>
+      </Router>
+    </CartContext>
   );
 }
 
